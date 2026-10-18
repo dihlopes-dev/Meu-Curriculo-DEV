@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Pereira Lopes - Desenvolvedor Full Stack & Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="layout-container">
+        
+        <!-- SIDEBAR ESQUERDA (Header Vertical) -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <div class="profile-pic-container">
+                    <img src="Profile.png" alt="Foto de Diego Pereira Lopes" class="profile-pic">
+                </div>
+                <h1>Diego Pereira Lopes</h1>
+                <p class="subtitle">Desenvolvedor Full Stack & Mobile</p>
+                <p class="bio">Busco transição para a área de TI, imerso em desenvolvimento web, mobile e inteligência artificial. Criando soluções eficientes e dinâmicas.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/dihlopes-dev" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/diego-lopes-778649429" target="_blank" class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://wa.me/5547933855366?text=Olá%20Diego,%20vi%20seu%20currículo%20e%20gostaria%20de%20conversar." target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="mailto:develop.dyhlopes@gmail.com" class="email-btn"><i class="fas fa-envelope"></i> E-mail</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL (Direita) -->
+        <main class="main-content">
+
+            <!-- Seção de Especialidades & Tecnologias -->
+            <section class="content-section">
+                <h2>Especialidades & Tecnologias</h2>
+                <div class="cards-grid">
+                    <div class="skill-card neon-blue" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fab fa-html5"></i>
+                            <h3>Front-End</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>HTML5, CSS3, JavaScript, React, Vite</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-purple" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fab fa-node-js"></i>
+                            <h3>Back-End</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Node.js, Express.js, Python, APIs REST, MySQL, PostgreSQL</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-green" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>React Native, Expo Go, Android Studio, Desenvolvimento Cross-Platform</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-orange" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Ferramentas</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Git, GitHub, VS Code, Trello, Figma, Supabase</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Outros Conhecimentos -->
+            <section class="content-section">
+                <h2>Outros Conhecimentos</h2>
+                <div class="cards-grid">
+                    <div class="skill-card neon-blue" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Inteligência Artificial</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Uso de ferramentas de IA, prompts avançados, automação de fluxos e integração com código.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-purple" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-palette"></i>
+                            <h3>Design & UI/UX</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Figma, Canva, CorelDRAW, estruturação de interfaces intuitivas e prototipagem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Projetos em Destaque -->
+            <section class="content-section">
+                <h2>Projetos em Destaque</h2>
+                <div class="cards-grid">
+                    <div class="skill-card neon-blue" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-film"></i>
+                            <h3>CineMatch</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Aplicação web para recomendação de séries utilizando HTML, CSS e JavaScript.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-purple" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-paw"></i>
+                            <h3>Agility Pets</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Landing page focada em cuidados pet desenvolvida com design moderno e responsivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-green" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-tasks"></i>
+                            <h3>Dia Dia</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Aplicativo de lista de tarefas com funcionalidades de adicionar, editar e remover tarefas.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-orange" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-cloud-sun"></i>
+                            <h3>Céu Aberto</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Aplicação web que informa a previsão do tempo em diferentes cidades em tempo real.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Formação Acadêmica & Certificações -->
+            <section class="content-section">
+                <h2>Formação & Certificações</h2>
+                <div class="cards-grid">
+                    
+                    <div class="skill-card neon-blue" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Ensino Médio Completo</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">Colégio Estadual Jardim Meriti</p> <p>(Concluído em 2008).</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-purple" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Carreira Tech (SCTEC / SENAI)</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">Carreira Tech (SCTEC / SENAI)</p> <p>- Estudos em Full Stack Web Development (Concluído em 2026) <br>
+                               - Desenvolvimento Mobile (React Native) *Previsão de conclusão: 2027.</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-green" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Informática & Rotinas Administrativas</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">CNI Escola de Informática:</p> <p>- IPD, Windows, Word, Excel, PowerPoint, Internet <br>- Aux. Administrativo, Aux. Financeiro, Departamento Pessoal e Secretariado (145h).</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-orange" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Montagem e Manutenção</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">CNI Escola de Informática:</p> <p>- Curso de Montagem e Manutenção de Computadores (16h).</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-yellow" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-paint-brush"></i>
+                            <h3>Corel Draw 11</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">CNI Escola de Informática:</p> <p>- Curso prático de design e vetorização (16h).</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-cyan" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Normas Regulamentadoras (NR)</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">Mazza Escola Técnica:</p> <p>- Formação Técnica Básica em Eletricidade NR-10 (40h)<br>- Trabalhos em Altura NR-35 (8h)<br>- Técnico de Instalações e Reparos em telecomunicações (44h).</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card neon-pink" onclick="toggleCard(this)">
+                        <div class="card-header">
+                            <i class="fas fa-cloud-sun"></i>
+                            <h3>Meteorologia & Operacional</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="font-weight: bold; color: #ffff;">Marinha do Brasil (Diretoria de Hidrografia e Navegação):</p> <p>- Observação Meteorológica<br>- Combate a Incêndio.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Seção de Experiência Profissional -->
+<section class="content-section">
+    <h2>Experiência Profissional</h2>
+    <div class="cards-grid">
+
+        <div class="skill-card neon-blue" onclick="toggleCard(this)">
+            <div class="card-header">
+                <i class="fas fa-car"></i>
+                <h3>Motorista por Aplicativos</h3>
+            </div>
+            <div class="card-body">
+                <p style="font-weight: bold; color: #ffff;">Autônomo | 06/2016 - Atual</p>
+                <p>- Atendimento direto ao público<br>- Gestão do próprio tempo e de rotas<br>- Uso diário de aplicativos e GPS.</p>
+            </div>
+        </div>
+
+        <div class="skill-card neon-purple" onclick="toggleCard(this)">
+            <div class="card-header">
+                <i class="fas fa-headset"></i>
+                <h3>Operador de Telemarketing Ativo</h3>
+            </div>
+            <div class="card-body">
+                <p style="font-weight: bold; color: #ffff;">Datamétrica Teleatendimento | 10/2017 - 01/2018</p>
+                <p>- Atendimento e contato ativo com clientes<br>- Comunicação clara e foco em metas.</p>
+            </div>
+        </div>
+
+        <div class="skill-card neon-green" onclick="toggleCard(this)">
+            <div class="card-header">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>Porteiro (Condomínio Logístico)</h3>
+            </div>
+            <div class="card-body">
+                <p style="font-weight: bold; color: #ffff;">Transegurtec Tecnologia em Serviços | 06/2016 - 10/2016</p>
+                <p>- Recepção e atendimento a visitantes<br>- Controle de acesso e responsabilidade operacional.</p>
+            </div>
+        </div>
+
+        <div class="skill-card neon-orange" onclick="toggleCard(this)">
+            <div class="card-header">
+                <i class="fas fa-network-wired"></i>
+                <h3>Instalador-Reparador de Telecom</h3>
+            </div>
+            <div class="card-body">
+                <p style="font-weight: bold; color: #ffff;">Serede | 09/2008 - 01/2009 e 09/2015 - 01/2016</p>
+                <p>- Instalação e reparo de equipamentos de telecomunicações<br>- Atendimento técnico em campo.</p>
+            </div>
+        </div>
+
+        <div class="skill-card neon-yellow" onclick="toggleCard(this)">
+            <div class="card-header">
+                <i class="fas fa-tower-cell"></i>
+                <h3>Instalador-Reparador de Telecom</h3>
+            </div>
+            <div class="card-body">
+                <p style="font-weight: bold; color: #ffff;">Telemont Engenharia de Telecomunicações | 12/2014 - 09/2015</p>
+                <p>- Instalação e manutenção de redes e equipamentos de telecom.</p>
+            </div>
+        </div>
+
+        <div class="skill-card neon-cyan" onclick="toggleCard(this)">
+            <div class="card-header">
+                <i class="fas fa-anchor"></i>
+                <h3>Praça da Marinha</h3>
+            </div>
+            <div class="card-body">
+                <p style="font-weight: bold; color: #ffff;">Comando da Marinha | 09/2006 - 12/2014</p>
+                <p>- Disciplina, trabalho em equipe e cumprimento de procedimentos<br>- Especialização em operações marítimas e navegação<br>- Operação e navegação por radares.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+            <!-- Rodapé -->
+            <footer>
+                <p>&copy; 2026 Diego Pereira Lopes. Desenvolvido com HTML5, CSS e JS.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
