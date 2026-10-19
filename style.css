@@ -290,3 +290,40 @@ footer {
         padding: 20px;
     }
 }
+/* SELETOR DE IDIOMA (canto superior direito) */
+.lang-switcher {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background-color: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #38bdf8;
+    border-radius: 999px;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+    color: #38bdf8;
+    transition: box-shadow 0.3s ease;
+}
+
+.lang-switcher:hover {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+}
+
+.lang-switcher select {
+    background: transparent;
+    color: #f8fafc;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.lang-switcher select option {
+    background-color: #0d1533;
+    color: #f8fafc;
+}
